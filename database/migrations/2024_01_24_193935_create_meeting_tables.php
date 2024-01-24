@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('meeting_tables', function (Blueprint $table) {
             $table->id();
             $table->string("Event_Name");
-            $table->dateTime('Event_date', $precision = 0);
+            $table->date('Event_date', $precision = 0);
             $table->integer('Event_people');
             $table->longText('Event_description');
             $table->timestamps();
